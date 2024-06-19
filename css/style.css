@@ -1,29 +1,42 @@
-* {
+/* ===========================
+Navigation
+============================== */
+
+.costumnav a {
+  font-weight: normal;
+  padding: 10px 15px;
+  color: black;
+  transition: 0.4s;
+}
+
+.costumnav a:not(.navbar-brand):hover {
+  font-weight: bold;
+  color: #336b87;
 }
 
 /* ===========================
 header
 ============================== */
-/* Warum hier kein Margin verändern? */
 .header {
   padding-bottom: 3rem;
 }
 
 .header a {
   color: white;
-  background-color: #336b87;
+  background-color: #90afc5;
   border: none;
+  transition: 0.4s;
 }
 
 .header a:hover {
   color: white;
-  background-color: #90afc5;
+  background-color: #336b87;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  transition: 0.4s;
 }
 
-.header a:active {
-  color: white;
-  background-color: #90afc5;
+.costum-picture {
+  border-radius: 50px;
 }
 
 /* ===========================
@@ -31,4 +44,119 @@ zitate
 ============================== */
 .icon-container svg {
   fill: #336b87;
+}
+
+.custom-card-container {
+  max-width: 600px;
+  margin: 0 auto; /* Zentriert die Karte horizontal */
+}
+.custom-card-title {
+  font-size: 2rem;
+}
+.custom-btn-contact {
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 2rem;
+  --bs-btn-font-size: 1rem;
+}
+
+/* ===========================
+about
+============================== */
+
+.costum-section {
+  padding: 4rem;
+  border-radius: 50px;
+  background-color: #f0f0e8;
+}
+
+.custom-pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-about-pic {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.info-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px;
+}
+
+/* ===========================
+Portfolio
+============================== */
+
+.costum-btn {
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.costum-btn:hover {
+  background-color: #90afc5;
+  color: white;
+}
+
+.costum-btn:active {
+  background-color: #336b87;
+}
+
+/* ===========================
+Testimonial Slider
+============================== */
+
+.carousel-item {
+  padding: 30px 0;
+}
+.card {
+  border: none;
+}
+.card-body img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #bababa;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* ===========================
+Contact
+============================== */
+
+.costum-card-container {
+  border-style: none;
+}
+
+.costum-card {
+  padding: 4rem;
+  border-radius: 50px;
+  background-color: #f0f0e8;
+}
+
+.costum-card-title {
+  font-size: 5rem;
+}
+
+.costum-btn-contact {
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.costum-btn-contact:hover {
+  color: white;
+  background-color: #90afc5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  transition: 0.4s;
 }

@@ -3,21 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link rel="icon" type="image/jpg" href="img/profilev2.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Gregor Schulze</title>
   </head>
-  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <body id="home" class="costum-body" data-spy="scroll" data-target=".navbar" data-offset="100">
 
     <!-- ==================
     nav
     ======================= -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="costumnav navbar navbar-expand-lg bg-body-tertiary">
           <div class="container">
             <a class="navbar-brand" href="#">Gregor Schulze</a>
             <button
@@ -57,35 +53,52 @@
       <!-- header -->
       <header class="header header-fluid text-black row align-items-center align-content-center my-5">
         <div class="col-md-6 text-sm-left pt-5">
-          <h1 class="display-2">Hallo, ich bin Gregor</h1>
-          <p class="lead display-6">Frontend Enthusiast</p>
-            <a href="#work" class="btn btn-lg px-5 fs-4">Portfolio</a>
+          <h1 class="display-2">Hey, ich bin Gregor</h1>
+          <p class="lead display-6">Frontend Entwickler</p>
+            <a href="#work" class="btn btn-lg px-5 fs-4 costum-btn">Portfolio</a>
         </div>
         <div class="col-md-6 pt-5">
-          <img src="img/profilev2.jpg" class="img-fluid rounded" alt="Gregor Schulze Profilbild">
+          <img src="img/profilev3.jpg" class=" img-fluid costum-picture" alt="Gregor Schulze Profilbild">
         </div>
       </header><!-- /header -->
-      <hr>
+      
 
 
-      <div id="about" class="container-fluid text-black d-flex justify-content-center align-items-center my-5 fs-4 row">
-        <p class="lead display-6">About</p>
-        <div class="col-md-6 text-left pt-5">
-          <div class="">
-            Bergliebhaber, 27, Freiheit, Freunde und gutes Essen – <br>das beschreibt mich sehr gut. In Zukunft vielleicht auch dein Kollege.<br><br>
-            Meine Superkraft liegt darin, dass ich niemals aufgebe. Jeder Mensch hat die Fähigkeit, viel aus seinem Leben zu machen, unabhängig von seiner Ausgangslage. Der Schlüssel zum Erfolg sind Hingabe und Kontinuität.</div>
+
+      <!-- about -->
+      <section id="about" class="costum-section">
+        <div class="container-fluid">
+
+          <div class="col-12 text-center">
+            <h2 class="display-3">Über Mich</h2>
+            <p class="section-text-p1">Erfahre mehr von mir</p>
+          </div>
+
+          <div class="row fs-5">
+            <div class="col-md-6 pt-5">
+              <p>
+                Motiondesigner, Bergliebhaber, 27, Freiheit, Freunde und gutes Essen – das beschreibt mich sehr gut. In Zukunft vielleicht auch dein Kollege.<br><br>
+                Meine Superkraft liegt darin, dass ich niemals aufgebe. Jeder Mensch hat die Fähigkeit, viel aus seinem Leben zu machen, unabhängig von seiner Ausgangslage. Der Schlüssel zum Erfolg liegt in der Hingabe und Kontinuität. <br><br> 
+                Die vergangenen 3 Jahre arbeitete ich als Motiondesigner & Cutter sowohl festangestellt als auch freiberuflich. Mein Wissensdurst und immer bestehendes Interesse am Programmieren führten mich in die Wagschale der Frontend Entwicklung. Das Interesse wuchs und schon bald verging kein Tag wo ich mich nicht durch den meionen Frontend Kurs oder YouTube Tutorials klickte. 
+                
+              </p>
+            </div>
+            <div class="col-md-6 pt-5">
+              <p>
+                In den vergangenen 12 Monaten habe ich mir die Grundlagen der Frontend Entwicklung in verschiedenen Projekten angeeignet. Nun würde ich gern tiefer in die Materie einsteigen und mein Wissen weiter ausbauen. Frontends sind meine Leidenschaft, daher möchte ich mit euch gemeinsam Frontends gestalten.<br><br> 
+                Ich liebe es, Probleme zu lösen und den bestehenden Status quo zu hinterfragen, um Prozesse weiter zu optimieren. Fehler sind für mich wertvolle Erfahrungen, die mir helfen, zukünftige Projekte besser anzugehen. <br><br> 
+                Ich hoffe, ich konnte dir einen kleinen Einblick geben, wie ich lebe und arbeite. Lass uns gerne einmal sprechen und herausfinden, ob wir ein Match sind.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 text-left pt-5">
-          <div class="">
-            Ich liebe es, Probleme zu lösen und den bestehenden Status quo zu hinterfragen, um Prozesse weiter zu optimieren. Fehler sind für mich wertvolle Erfahrungen, die mir helfen, zukünftige Projekte besser anzugehen. <br><br> 
-            Ich hoffe, ich konnte dir einen kleinen Einblick geben, wie ich lebe und arbeite. Lass uns gerne einmal sprechen und herausfinden, ob wir ein Match sind.</div>
-        </div>
-      </div>
-      <hr>
+      </section><!-- /about -->
+      
 
     <!-- work -->
     <section id="work">
-      <h1 class="display-4 text-center my-5 text-body-secondary">Projekte</h1>
+      <h2 class="display-4 mt-5 text-center">Projekte</h2>
+      <p class="text-center mb-5">Erfahre mehr über meine Projekte</p>
       <div class="row">
         <div class="col-md-6 col-lg-4">
           <div class="card mb-5">
@@ -93,8 +106,19 @@
               <img src="img/gameshow.jpg" class="card-img-top" alt="Vivianne">
             </a>
             <div class="card-body">
-              <h4 class="card-title">Rate Spiel</h4>
-              <p class="card-text">Der Spieler hat fünf Herzen, die er riskieren kann, um das Sprichwort zu erraten.</p>
+              <h2 class="card-title">Rate Spiel</h2>
+              <div class="py-2">
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  HTML
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  CSS
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  JavaScript
+                </button>
+              </div>
+              <!-- <p class="card-text py-2">Der Spieler hat fünf Herzen, die er riskieren kann, um das Sprichwort zu erraten.</p> -->
             </div>
           </div>
         </div>
@@ -105,8 +129,22 @@
               <img src="img/directory.jpg" class="card-img-top" alt="Jay">
             </a>
             <div class="card-body">
-              <h4 class="card-title">Verzeichnis für Mitarbeiter</h4>
-              <p class="card-text">Ein Verzeichnis, das Mitarbeiterdaten von einer API mit zufällig generierten Benutzerprofilen bezieht.</p>
+              <h3 class="card-title">Verzeichnis für Mitarbeiter</h3>
+              <div class="py-2">
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  HTML
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  CSS
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  JavaScript
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  API
+                </button>
+              </div>
+              <!-- <p class="card-text">Ein Verzeichnis, das Mitarbeiterdaten von einer API mit zufällig generierten Benutzerprofilen bezieht.</p> -->
             </div>
           </div>
         </div>
@@ -117,8 +155,63 @@
               <img src="img/form.jpg" class="card-img-top" alt="NodeStradamus">
             </a>
             <div class="card-body">
-              <h4 class="card-title">Formular</h4>
-              <p class="card-text">Ein interaktives Formular mit Dropdown-Menüs und Schaltflächen für die Interaktivität.</p>
+              <h3 class="card-title">Formular</h3>
+              <div class="py-2">
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  HTML
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  CSS
+                </button>
+              </div>
+              <!-- <p class="card-text">Ein interaktives Formular mit Dropdown-Menüs und Schaltflächen für die Interaktivität.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-5">
+            <a href="https://gregorschulze.github.io/responsive-layout/" target="_blank">
+              <img src="img/responsive.jpg" class="card-img-top" alt="Json">
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Responsive Design</h3>
+              <div class="py-2">
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  HTML
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  CSS
+                </button>
+              </div>
+              <!-- <p class="card-text">Ein responsives Design, das sich an Desktop-, Tablet- und Smartphone-Bildschirme anpasst.</p> -->
+            </div>
+          </div>
+        </div>
+        
+      
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-5">
+            <a href="https://gregorschulze.github.io/interactive-dashboard/" target="_blank">
+              <img src="img/dashboard.jpg" class="card-img-top" alt="Ecma">
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Dashboard</h3>
+              <div class="py-2">
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  HTML
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  CSS
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  JavaScript
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  SVG
+                </button>
+              </div>
+              <!-- <p class="card-text">Ein Dashboard mit Benutzerdaten, SVG-Grafiken in der Navigationsleiste und Diagrammen.</p> -->
             </div>
           </div>
         </div>
@@ -129,42 +222,90 @@
               <img src="img/photogallery.jpg" class="card-img-top" alt="Robbie">
             </a>
             <div class="card-body">
-              <h4 class="card-title">Bilderallerie</h4>
-              <p class="card-text">Eine Bildergalerie, bei der durch Klicken auf die Bilder ein verstecktes Overlay enthüllt wird.</p>
+              <h3 class="card-title">Bildgallerie</h3>
+              <div class="py-2">
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  HTML
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  CSS
+                </button>
+                <button type="button" class="costum-btn btn btn-outline-secondary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  JavaScript
+                </button>
+              </div>
+              <!-- <p class="card-text">Eine Bildergalerie, bei der durch Klicken auf die Bilder ein verstecktes Overlay enthüllt wird.</p> -->
             </div>
           </div>
         </div>
-      
-        <div class="col-md-6 col-lg-4">
-          <div class="card mb-5">
-            <a href="https://gregorschulze.github.io/interactive-dashboard/" target="_blank">
-              <img src="img/dashboard.jpg" class="card-img-top" alt="Ecma">
-            </a>
-            <div class="card-body">
-              <h4 class="card-title">Dashboard</h4>
-              <p class="card-text">Ein Dashboard mit Benutzerdaten, SVG-Grafiken in der Navigationsleiste und Diagrammen.</p>
-            </div>
-          </div>
-        </div>
-      
-      
-        <div class="col-md-6 col-lg-4">
-          <div class="card mb-5">
-            <a href="https://gregorschulze.github.io/responsive-layout/" target="_blank">
-              <img src="img/responsive.jpg" class="card-img-top" alt="Json">
-            </a>
-            <div class="card-body">
-              <h4 class="card-title">Responsive Design</h4>
-              <p class="card-text">Ein responsives Design, das sich an Desktop-, Tablet- und Smartphone-Bildschirme anpasst.</p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section><!-- /work -->
+    
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container-fluid">
+          <div class="costum-card-container card mb-5">
+              <div class="costum-card card-body text-center">
+                  <h1 class="costum-card-title ard-title">Lass uns<br>kennenlernen</h1>
+                  <div class="py-4">
+                      <!-- <button id="emailButton" type="button" class="costum-btn-contact btn btn-outline-secondary btn-lg px-5 fs-4" style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 1rem;">
+                          Kontakt
+                      </button> -->
+                      <a href="mailto:gr.schulze@t-online.de" class="costum-btn-contact btn btn-outline-secondary btn-lg px-5 fs-4" style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 1rem;">
+                        Kontakt
+                    </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p class="fs-4">„Gregor ist ein unermüdlicher und detailverliebter Kollege, der Ressourcen effizient nutzt und sein Wissen großzügig mit anderen teilt. Der Ressourcen effizient nutzt und sein Wissen großzügig mit anderen teilt.“</p>
+                            <h5 class="card-title">Katrin Brandt</h5>
+                            <p class="card-text">SVP Weber Shandwick</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p class="fs-4">„Gregor war maßgeblich am Erfolg unseres Unternehmens beteiligt. Er hatte sowohl das breite als auch das tiefe Fachwissen, um uns bei der Definition unserer Anforderungen zu helfen.“</p>
+                            <h5 class="card-title">Uwe Nadler</h5>
+                            <p class="card-text">CAD Ravir Film</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
     <!-- zitate -->
-    <hr>
-    <div class="container my-5">
+    
+    <!-- <div class="container my-5">
       <div class="d-flex justify-content-center">
         <figure class="text-center me-3">
           <blockquote class="blockquote">
@@ -183,8 +324,9 @@
           </figcaption>
         </figure>
       </div>
-    </div><!-- /zitate -->
-    <hr>
+    </div>/zitate -->
+    
+
 
     </main><!-- /main -->
 
@@ -202,7 +344,7 @@
               <li class="nav-item">
                 <a class="nav-link text-black" href="https://www.linkedin.com/in/gregor-s-8b36401a4/" title="Connect on LinkedIn" target="_blank" rel="noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1067 1067" class="bi bi-linkedin" width="24" height="24" aria-label="LinkedIn icon" style="fill: currentColor;">
-                    <path d="M984.948 0H81.655C38.42 0 3.356 34.227 3.356 76.411V990.28c0 42.16 35.064 76.387 78.299 76.387h903.293c43.299 0 78.363-34.246 78.363-76.387V76.411c0-42.205-35.083-76.411-78.363-76.411ZM324.635 892.938H164.542v-481.65h160.093v481.65ZM244.599 345.49h-1.072c-53.7 0-88.442-36.993-88.442-83.209 0-47.245 35.814-83.209 90.565-83.209 54.773 0 88.464 35.964 89.536 83.209 0 46.216-34.785 83.209-90.587 83.209Zm657.357 547.448H741.841V635.203c0-64.725-23.162-108.902-81.087-108.902-44.223 0-70.558 29.786-82.16 58.568-4.223 10.274-5.255 24.642-5.255 39.052v268.994H413.247s2.105-436.506 0-481.65h160.092v68.176c21.275-32.811 59.322-79.542 144.309-79.542 105.321 0 184.308 68.861 184.308 216.815v276.224Z"></path>
+                    <path d="M984.948 0H81.655C38.42 0 3.356 34.227 3.356 76.411V990.28c0 42.16 35.064 76.387 78.299 76.387h903.293c43.299 0 78.363-34.246 78.363-76.387V76.411c0-42.205-35.083-76.411-78.363-76.411ZM324.635 892.938H164.542v-481.65h160.093v481.65ZM244.599 345.49h-1.072c-53.7 0-88.442-36.993-88.442-83.209 0-47.245 35.814-83.209 90.565-83.209 54.773 0 88.464 35.964 89.536 83.209 0 46.216-34.785 83.209-90.587 83.209Zm657.357 547.448H741.841V635.203c0-64.725-23.162-108.902-81.087-108.902-44.223 0-70.558 29.786-82.16 58.568-4.223 10.274-5.255 24.642-5.255 39.052v268.994h313.247s2.105-436.506 0-481.65h160.092v68.176c21.275-32.811 59.322-79.542 144.309-79.542 105.321 0 184.308 68.861 184.308 216.815v276.224Z"></path>
                   </svg>
                   <span class="ms-2">LinkedIn</span>
                 </a>
@@ -234,10 +376,7 @@
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   </body>
 </html>
