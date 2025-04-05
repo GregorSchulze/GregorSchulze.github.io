@@ -25,63 +25,72 @@
 
     <!-- Hauptinhalt -->
     <main>
-      <div class="lg:flex mb-10">
-        <div class="text-center my-15">
-          <h1 class="text-4xl sm:text-7xl font-semibold text-gray-900">
+      <div class="lg:flex mb-20 justify-between">
+        <div
+          class="flex flex-col items-center lg:items-start lg:justify-center lg:text-left my-10"
+        >
+          <h1
+            class="text-4xl md:text-7xl font-semibold text-gray-900 mb-2 text-center lg:text-left"
+          >
             Hey, ich bin Gregor
           </h1>
-          <p class="text-2xl font-semibold text-gray-500 sm:text-5xl mb-5">
-            Frontend Entwickler
-          </p>
           <p
-            class="text-lg font-medium text-pretty text-gray-500 sm:text-xl/8 mb-5"
+            class="text-2xl md:text-5xl font-semibold text-gray-500 mb-5 text-center lg:text-left"
           >
-            Die Lösung zum Erfolg liegt nicht im Talent, sondern in Kontinuität.
+            Frontend Entwickler
           </p>
           <a
             href="mailto:gr.schulze@t-online.de"
-            class="rounded-full outline px-6 py-3 text-lg text-white bg-black hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >Kontakt</a
+            class="rounded-full outline px-6 py-3 md:px-8 md:py-4 text-xl md:text-2xl text-white bg-black"
           >
+            Kontakt
+          </a>
         </div>
         <div class="flex place-content-center mb-15">
           <img
             src="img/profilev3.jpg"
-            class="rounded-xl w-70 md:w-120"
+            class="rounded-xl w-70 md:w-110"
             alt="Gregor Schulze Profilbild"
           />
         </div>
       </div>
 
       <!-- Über Mich -->
-      <section id="about" class="mb-10">
+      <section id="about" class="mb-20">
         <div class="bg-[#f0f0e8] rounded-xl p-8 md:p-16">
-          <h2 class="text-5xl font-semibold text-center">Über Mich</h2>
+          <h2
+            class="text-center text-5xl sm:text-7xl font-semibold text-gray-900 pb-1"
+          >
+            Über Mich
+          </h2>
           <p class="text-gray-500 text-center pb-5">Erfahre mehr von mir</p>
 
-          <div class="md:flex">
-            <div class="">
+          <div class="md:flex gap-10">
+            <div class="flex-1">
               <p>
                 Motiondesigner, Bergliebhaber, 28, Freiheit, Freunde und gutes
                 Essen – das beschreibt mich sehr gut. In Zukunft vielleicht auch
                 dein Kollege.<br /><br />
-                Meine Superkraft liegt darin, dass ich niemals aufgebe. Jeder
-                Mensch hat die Fähigkeit, viel aus seinem Leben zu machen. Der
-                Schlüssel zum Erfolg liegt in Hingabe und Kontinuität.<br /><br />
+                Meine Superkraft liegt darin, dass ich eine hohe intrinsiche
+                Motivation für die Themen entwickel die mich interessieren.
+                Jeder Mensch hat die Fähigkeit, viel aus seinem Leben zu machen.
+                Der Schlüssel zum Erfolg liegt in Hingabe und Kontinuität.<br /><br />
                 In den vergangenen drei Jahren arbeitete ich als Motiondesigner
                 und Cutter, sowohl festangestellt als auch freiberuflich.
               </p>
             </div>
-            <div class="">
+            <div class="flex-1">
               <p>
-                Nun bin ich auf der Suche nach einer In den vergangenen 12
-                Monaten habe ich mir die Grundlagen der Frontend Entwicklung in
-                verschiedenen Projekten angeeignet. Nun würde ich gern tiefer in
-                die Materie einsteigen und mein Wissen weiter ausbauen.<br /><br />
-                Ich liebe es, Probleme zu lösen und den bestehenden Status quo
-                zu hinterfragen, um Prozesse weiter zu optimieren. Wenn du das
-                gefühl hast, dass die Chemie zwischen uns stimmen könnte,
-                schreib mir gern. 🫶🏻
+                Ich bin ein Problemlöser und liebe es im Team aber auch allein ,
+                der sich nun auf die Frontend-Entwicklung konzentriert.<br /><br />In
+                den vergangenen 12 Monaten habe ich mir die Grundlagen der
+                Frontend Entwicklung in verschiedenen Projekten angeeignet. Nun
+                würde ich gern tiefer in die Materie einsteigen und mein Wissen
+                weiter ausbauen. Ich liebe es, Probleme zu lösen und den
+                bestehenden Status quo zu hinterfragen, um Prozesse weiter zu
+                optimieren.<br /><br />
+                Wenn du das gefühl hast, dass die Chemie zwischen uns stimmen
+                könnte, schreib mir gern. 🫶🏻
               </p>
             </div>
           </div>
@@ -89,7 +98,7 @@
       </section>
 
       <!-- Projekte -->
-      <section id="work">
+      <section id="work" class="mb-20">
         <h2
           class="text-center text-5xl sm:text-7xl font-semibold text-gray-900 pb-1"
         >
@@ -99,21 +108,88 @@
           Erfahre mehr über meine Projekte
         </p>
 
-        <div class="">
+        <div class="grid gap-15 sm:grid-cols-2">
           <!-- Projekt 1 -->
+          <div class="">
+            <a
+              href="https://GregorSchulze.github.io/todo-list/"
+              target="_blank"
+            >
+              <img
+                class="shadow-lg rounded-xl"
+                src="img/doit.jpg"
+                alt="todo-app"
+              />
+            </a>
+            <div class="">
+              <h3 class="text-3xl pt-4 pb-2">Do It</h3>
+              <div class="text-gray-400 text-xs">
+                <span class="rounded-full outline px-2 py-1">React</span>
+                <span class="rounded-full outline px-2 py-1">JSX</span>
+                <span class="rounded-full outline px-2 py-1">Vite</span>
+                <span class="rounded-full outline px-2 py-1">Tailwind</span>
+              </div>
+            </div>
+          </div>
+
           <div class="">
             <a
               href="https://gregorschulze.github.io/guess-the-phrase-game/"
               target="_blank"
             >
-              <img src="img/gameshow.jpg" alt="Rate Spiel" />
+              <img
+                class="shadow-lg rounded-xl"
+                src="img/gameshow.jpg"
+                alt="guessing-game"
+              />
             </a>
             <div class="">
-              <h3>Rate Spiel</h3>
-              <div class="text-gray-500">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+              <h3 class="text-3xl pt-4 pb-2">Rate Spiel</h3>
+              <div class="text-gray-400 text-xs">
+                <span class="rounded-full outline px-2 py-1">HTML</span>
+                <span class="rounded-full outline px-2 py-1">CSS</span>
+                <span class="rounded-full outline px-2 py-1">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <a
+              href="https://gregorschulze.github.io/directory-of-employees-using-API/"
+              target="_blank"
+            >
+              <img
+                class="shadow-lg rounded-xl"
+                src="img/directory.jpg"
+                alt="worker-directory"
+              />
+            </a>
+            <div class="">
+              <h3 class="text-3xl pt-4 pb-2">Mitarbeiterverzeichnis</h3>
+              <div class="text-gray-400 text-xs">
+                <span class="rounded-full outline px-2 py-1">HTML</span>
+                <span class="rounded-full outline px-2 py-1">CSS</span>
+                <span class="rounded-full outline px-2 py-1">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <a
+              href="https://gregorschulze.github.io/interactive-dashboard/"
+              target="_blank"
+            >
+              <img
+                class="shadow-lg rounded-xl"
+                src="img/dashboard.jpg"
+                alt="dashboard"
+              />
+            </a>
+            <div class="">
+              <h3 class="text-3xl pt-4 pb-2">Dashboard</h3>
+              <div class="text-gray-400 text-xs">
+                <span class="rounded-full outline px-2 py-1">HTML</span>
+                <span class="rounded-full outline px-2 py-1">CSS</span>
+                <span class="rounded-full outline px-2 py-1">JavaScript</span>
               </div>
             </div>
           </div>
@@ -123,25 +199,34 @@
       </section>
 
       <!-- Kontakt -->
-      <section id="contact">
+      <section id="contact" class="bg-[#f0f0e8] rounded-xl p-8 md:p-16">
         <div class="text-center my-15">
           <h2 class="text-5xl sm:text-7xl font-semibold text-gray-900 pb-10">
             Lass uns<br />kennenlernen
           </h2>
           <a
             href="mailto:gr.schulze@t-online.de"
-            class="rounded-full outline px-8 py-4 text-2xl text-black hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            class="rounded-full outline px-6 py-3 md:px-8 md:py-4 text-xl md:text-2xl text-black"
             >Kontakt</a
           >
         </div>
       </section>
 
       <!-- Testimonials -->
-      <div class="">
-        <div class="text-center my-20 text-2xl">
-          <p>„Gregor ist ein unermüdlicher und detailverliebter Kollege...“</p>
+
+      <div class="flex justify-center">
+        <div class="text-center my-20 text-2xl max-w-xl mx-auto">
+          <p>
+            „Aufgrund seiner ausgezeichneten Auffassungsgabe ist er jederzeit in
+            der Lage, auch schwierige Situationen sofort zutreffend zu erfassen
+            und schnell exzellente Lösungen zu finden. Auch in Situationen mit
+            größtem Arbeitsaufkommen erweist er sich dauerhaft als
+            außergewöhnlich belastbar.“
+          </p>
           <h5 class="text-xl font-bold">Katrin Brandt</h5>
-          <p class="text-sm">SVP Weber Shandwick</p>
+          <p class="text-xs text-gray-400">
+            SVP Weber Shandwick, ehemalige Chefin
+          </p>
         </div>
       </div>
     </main>
@@ -149,7 +234,7 @@
     <!-- Footer -->
     <footer>
       <div class="">
-        <ul class="flex justify-between py-10">
+        <ul class="flex justify-center gap-10 py-10">
           <li>
             <a
               href="https://www.linkedin.com/in/gregor-s-8b36401a4/"
