@@ -24,7 +24,7 @@ export function MainContent() {
         </div>
         <div className="flex place-content-center mb-15">
           <img
-            src="src/img/profilev3.jpg"
+            src="src/assets/profilev3.JPG"
             className="rounded-xl w-70 md:w-110"
             alt="Gregor Schulze Profilbild"
           />
@@ -109,7 +109,7 @@ export function MainContent() {
             >
               <img
                 className="shadow-lg rounded-xl"
-                src="src/img/doit.jpg"
+                src="src/assets/doit.JPG"
                 alt="todo-app"
               />
             </a>
@@ -131,7 +131,7 @@ export function MainContent() {
             >
               <img
                 className="shadow-lg rounded-xl"
-                src="src/img/gameshow.jpg"
+                src="src/assets/gameshow.JPG"
                 alt="guessing-game"
               />
             </a>
@@ -153,7 +153,7 @@ export function MainContent() {
             >
               <img
                 className="shadow-lg rounded-xl"
-                src="src/img/directory.jpg"
+                src="src/assets/directory.JPG"
                 alt="worker-directory"
               />
             </a>
@@ -176,7 +176,7 @@ export function MainContent() {
             >
               <img
                 className="shadow-lg rounded-xl"
-                src="src/img/dashboard.jpg"
+                src="src/assets/dashboard.JPG"
                 alt="dashboard"
               />
             </a>
