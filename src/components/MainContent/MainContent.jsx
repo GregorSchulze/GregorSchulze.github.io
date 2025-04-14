@@ -24,7 +24,7 @@ export function MainContent() {
         </div>
         <div className="flex place-content-center mb-15">
           <img
-            src="./src/assets/profilev3.jpg"
+            src="/img/profilev3.jpg"
             className="rounded-xl w-70 md:w-110"
             alt="Gregor Schulze Profilbild"
           />
@@ -102,14 +102,14 @@ export function MainContent() {
         <div className="grid gap-15 sm:grid-cols-2">
           {/* <!-- Projekt 1 --> */}
 
-          <div className="">
+          <div>
             <a
               href="https://GregorSchulze.github.io/todo-list/"
               target="_blank"
             >
               <img
-                className="shadow-lg rounded-xl"
-                src="./src/assets/doit.jpg"
+                className="shadow-lg rounded-xl transition-all duration-150 ease-in-out hover:scale-90 "
+                src="/img/doit.jpg"
                 alt="todo-app"
               />
             </a>
@@ -131,7 +131,7 @@ export function MainContent() {
             >
               <img
                 className="shadow-lg rounded-xl"
-                src="./src/assets/gameshow.jpg"
+                src="/img/gameshow.jpg"
                 alt="guessing-game"
               />
             </a>
@@ -153,7 +153,7 @@ export function MainContent() {
             >
               <img
                 className="shadow-lg rounded-xl"
-                src="./src/assets/directory.jpg"
+                src="/img/directory.jpg"
                 alt="worker-directory"
               />
             </a>
@@ -176,7 +176,7 @@ export function MainContent() {
             >
               <img
                 className="shadow-lg rounded-xl"
-                src="./src/assets/dashboard.jpg"
+                src="/img/dashboard.jpg"
                 alt="dashboard"
               />
             </a>
