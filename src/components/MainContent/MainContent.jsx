@@ -12,7 +12,7 @@ export function MainContent() {
   useEffect(() => {
     AOS.init({
       // Optionale Einstellungen
-      duration: 700,
+      duration: 1000,
       easing: "ease-out-quart",
       once: true,
     });
@@ -45,7 +45,7 @@ export function MainContent() {
         </div>
       </div>
 
-      <div className="group z-1 fixed bottom-10 right-[max(calc(50%-700px+40px),2.5rem)]">
+      <div className="group z-1 fixed bottom-10 right-[max(calc(50%-1000px+40px),2.5rem)]">
         <button
           onClick={toggleDarkMode}
           className="rounded-full w-10 h-10 md:w-12 md:h-12 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center hover:scale-110"
@@ -113,14 +113,10 @@ export function MainContent() {
           praktisch anwenden.
         </p>
 
-        <div
-          data-aos="fade-up"
-          data-aos-duration="700"
-          className="grid gap-15 sm:grid-cols-2"
-        >
+        <div className="grid gap-15 sm:grid-cols-2">
           {/* <!-- Projekt 1 --> */}
 
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             <a
               href="https://GregorSchulze.github.io/todo-list/"
               target="_blank"
@@ -142,7 +138,7 @@ export function MainContent() {
             </div>
           </div>
 
-          <div className="">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <a
               href="https://gregorschulze.github.io/guess-the-phrase-game/"
               target="_blank"
@@ -164,7 +160,7 @@ export function MainContent() {
               </div>
             </div>
           </div>
-          <div className="">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
             <a
               href="https://gregorschulze.github.io/directory-of-employees-using-API/"
               target="_blank"
@@ -187,7 +183,7 @@ export function MainContent() {
             </div>
           </div>
 
-          <div className="">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
             <a
               href="https://gregorschulze.github.io/interactive-dashboard/"
               target="_blank"
