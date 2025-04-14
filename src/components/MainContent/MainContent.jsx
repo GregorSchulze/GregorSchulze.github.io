@@ -1,13 +1,27 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import { useDarkMode } from "../Context/DarkModeContext";
+import "../../index.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export function MainContent() {
   const { darkMode, toggleDarkMode } = useDarkMode();
 
+  // Animate on scroll with AOS
+  useEffect(() => {
+    AOS.init({
+      // Optionale Einstellungen
+      duration: 700,
+      easing: "ease-out-quart",
+      once: true,
+    });
+  }, []);
+
   return (
-    <main className="bg-white dark:bg-[#212124] dark:text-white ">
+    <main className="bg-white dark:bg-[#212124] dark:text-white">
       <div className="lg:flex mb-20 justify-between">
-        <div className="flex flex-col items-center lg:items-start lg:justify-center lg:text-left my-10">
+        <div className="flex flex-col items-center lg:items-start lg:justify-center lg:text-left my-10 ">
           <h1 className="text-4xl md:text-7xl font-semibold text-black mb-2 text-center lg:text-left dark:text-white">
             Hey, ich bin Gregor
           </h1>
@@ -17,7 +31,7 @@ export function MainContent() {
           </p>
           <a
             href="mailto:gr.schulze@t-online.de"
-            className="rounded-full outline px-6 py-3 md:px-8 md:py-4 text-xl md:text-2xl text-white dark:text-black bg-black dark:bg-white"
+            className="rounded-full outline px-6 py-3 md:px-8 md:py-4 text-xl md:text-2xl text-white dark:text-black bg-black dark:bg-white hover:scale-110"
           >
             Kontakt
           </a>
@@ -25,7 +39,7 @@ export function MainContent() {
         <div className="flex place-content-center mb-15">
           <img
             src="/img/profilev3.jpg"
-            className="rounded-xl w-70 md:w-110"
+            className="rounded-xl w-70 md:w-110 fade-in-slow"
             alt="Gregor Schulze Profilbild"
           />
         </div>
@@ -34,7 +48,7 @@ export function MainContent() {
       <div className="group fixed bottom-10 right-[max(calc(50%-700px+40px),2.5rem)]">
         <button
           onClick={toggleDarkMode}
-          className="rounded-full w-10 h-10 md:w-12 md:h-12 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center group-hover:scale-110"
+          className="rounded-full w-10 h-10 md:w-12 md:h-12 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center hover:scale-110"
         >
           {darkMode ? "☀️" : "🌙"}
         </button>
@@ -99,7 +113,11 @@ export function MainContent() {
           praktisch anwenden.
         </p>
 
-        <div className="grid gap-15 sm:grid-cols-2">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          className="grid gap-15 sm:grid-cols-2"
+        >
           {/* <!-- Projekt 1 --> */}
 
           <div>
@@ -108,7 +126,7 @@ export function MainContent() {
               target="_blank"
             >
               <img
-                className="shadow-lg rounded-xl transition-all duration-150 ease-in-out hover:scale-90 "
+                className="shadow-lg rounded-xl ease-in-out hover:scale-90"
                 src="/img/doit.jpg"
                 alt="todo-app"
               />
@@ -130,7 +148,7 @@ export function MainContent() {
               target="_blank"
             >
               <img
-                className="shadow-lg rounded-xl"
+                className="shadow-lg rounded-xl ease-in-out hover:scale-90"
                 src="/img/gameshow.jpg"
                 alt="guessing-game"
               />
@@ -152,7 +170,7 @@ export function MainContent() {
               target="_blank"
             >
               <img
-                className="shadow-lg rounded-xl"
+                className="shadow-lg rounded-xl ease-in-out hover:scale-90"
                 src="/img/directory.jpg"
                 alt="worker-directory"
               />
@@ -175,7 +193,7 @@ export function MainContent() {
               target="_blank"
             >
               <img
-                className="shadow-lg rounded-xl"
+                className="shadow-lg rounded-xl ease-in-out hover:scale-90"
                 src="/img/dashboard.jpg"
                 alt="dashboard"
               />
@@ -198,7 +216,7 @@ export function MainContent() {
         id="contact"
         className="bg-[#f0f0e8] dark:bg-[#1a1a1a] rounded-xl p-8 md:p-16"
       >
-        <div className="text-center my-15">
+        <div className="text-center my-15 flex flex-col items-center">
           <h2 className="text-5xl sm:text-7xl font-semibold text-black pb-10 dark:text-white">
             Lass uns
             <br />
@@ -206,11 +224,12 @@ export function MainContent() {
           </h2>
           <a
             href="mailto:gr.schulze@t-online.de"
-            className="rounded-full outline px-6 py-3 md:px-8 md:py-4 text-xl md:text-2xl text-black dark:text-white"
+            className="rounded-full outline px-6 py-3 md:px-8 md:py-4 text-xl md:text-2xl text-black dark:text-white hover:scale-110"
           >
             Kontakt
           </a>
         </div>
+        <div className="flex flex-col"></div>
       </section>
       {/* <!-- Testimonials --> */}
       <div className="flex justify-center">

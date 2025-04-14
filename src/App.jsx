@@ -3,6 +3,7 @@ import "./index.css";
 import { Nav } from "./components/Nav/Nav";
 import { MainContent } from "./components/MainContent/MainContent";
 import { Footer } from "./components/Footer/Footer";
+import "aos/dist/aos.css";
 
 function App() {
   return (
