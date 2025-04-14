@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 export function MainContent() {
   const { darkMode, toggleDarkMode } = useDarkMode();
 
-  // Animate on scroll with AOS
+  // Animate on scroll with
   useEffect(() => {
     AOS.init({
       // Optionale Einstellungen
@@ -45,7 +45,7 @@ export function MainContent() {
         </div>
       </div>
 
-      <div className="group fixed bottom-10 right-[max(calc(50%-700px+40px),2.5rem)]">
+      <div className="group z-1 fixed bottom-10 right-[max(calc(50%-700px+40px),2.5rem)]">
         <button
           onClick={toggleDarkMode}
           className="rounded-full w-10 h-10 md:w-12 md:h-12 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center hover:scale-110"

@@ -1,3 +1,6 @@
+import { FaBeer } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 export function Footer() {
   return (
     <footer>
@@ -8,17 +11,17 @@ export function Footer() {
               href="https://www.linkedin.com/in/gregor-s-8b36401a4/"
               target="_blank"
             >
-              LinkedIn
+              <FaLinkedin size={25} color="currentColor" />
             </a>
           </li>
           <li>
             <a href="https://github.com/GregorSchulze" target="_blank">
-              GitHub
+              <FaGithub size={25} color="currentColor" />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/gregor.schulze/" target="_blank">
-              Instagram
+              <FaInstagram size={25} color="currentColor" />
             </a>
           </li>
         </ul>
