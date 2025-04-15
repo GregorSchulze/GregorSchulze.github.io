@@ -4,6 +4,9 @@ import { useDarkMode } from "../Context/DarkModeContext";
 import "../../index.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaCode } from "react-icons/fa";
+import { CiMountain1 } from "react-icons/ci";
+import { VscFlame } from "react-icons/vsc";
 
 export function MainContent() {
   const { darkMode, toggleDarkMode } = useDarkMode();
@@ -56,47 +59,40 @@ export function MainContent() {
       {/* <!-- Über Mich --> */}
       <section id="about" className="mb-20 ">
         <div className="bg-[#f0f0e8] rounded-xl p-8 md:p-16 dark:bg-[#1a1a1a] text-black dark:text-white">
-          <h2 className="text-center text-5xl sm:text-7xl font-semibold">
-            Über Mich
-          </h2>
-          <p className="text-gray-500 text-center pb-5">Erfahre mehr von mir</p>
+          <div className="mb-5">
+            <h2 className="text-center text-5xl sm:text-7xl font-semibold">
+              Über Mich
+            </h2>
+            <p className="text-gray-500 text-center pb-5">
+              Erfahre, was mich antreibt
+            </p>
+          </div>
 
-          <div className="md:flex gap-10">
-            <div className="flex-1">
-              <p>
-                Bergliebhaber, Freiheit, Freunde und gutes Essen – das
-                beschreibt mich sehr gut. In Zukunft vielleicht auch dein
-                Kollege.
-                <br />
-                <br />
-                Intrinsische Motivation für Themen , dass ich eine hohe
-                intrinsiche Motivation für die Themen entwickel die mich
-                interessieren. Jeder Mensch hat die Fähigkeit, viel aus seinem
-                Leben zu machen. Der Schlüssel zum Erfolg liegt in Hingabe und
-                Kontinuität.
-                <br />
-                <br />
-                In den vergangenen drei Jahren arbeitete ich als Motiondesigner
-                und Cutter, sowohl festangestellt als auch freiberuflich. In
-                dieser Zeit habe ich viel Erfahrung im Bereich Design aber auch
+          <div className="flex flex-col sm:flex-row sm:gap-5 sm:justify-between ">
+            <div className="sm:flex-1">
+              <VscFlame size={50} color="currentColor" />
+              <h2 className="text-3xl font-semibold">Motivation</h2>
+              <p className="text-gray-500">
+                Ich liebe es, mich weiterzuentwickeln. <br></br> Denn der ich
+                finde der Schlüssel zum Erfolg liegt in Hingabe und Kontinuität.
               </p>
             </div>
-            <div className="flex-1">
-              <p>
-                Ich bin ein Problemlöser und liebe es im Team aber auch allein
-                zu arbeiten.
-                <br />
-                <br />
-                In den vergangenen 12 Monaten habe ich mir die Grundlagen der
-                Frontend Entwicklung in verschiedenen Projekten angeeignet. Nun
-                würde ich gern tiefer in die Materie einsteigen und mein Wissen
-                weiter ausbauen. Ich liebe es, Probleme zu lösen und den
-                bestehenden Status quo zu hinterfragen, um Prozesse weiter zu
-                optimieren.
-                <br />
-                <br />
-                Wenn du das gefühl hast, dass die Chemie zwischen uns stimmen
-                könnte, schreib mir gern. 🫶🏻
+            <div className="sm:flex-1">
+              <FaCode size={50} color="currentColor" />
+              <h2 className="text-3xl font-semibold">WebDev</h2>
+              <p className="text-gray-500">
+                Ich baue moderne Web-Apps mit React - clean, performant und
+                nutzerfreundlich.
+              </p>
+            </div>
+
+            <div className="sm:flex-1">
+              <CiMountain1 size={50} color="currentColor" />
+              <h2 className="text-3xl font-semibold">Bergliebhaber</h2>
+              <p className="text-gray-500">
+                Meine Freizeit verbringe ich am liebsten in den Bergen. Wenn ich
+                also nicht gerade an Frontends sitze, findet ihr mich auf dem
+                nächsten Gipfel.
               </p>
             </div>
           </div>
@@ -107,10 +103,11 @@ export function MainContent() {
         <h2 className="text-center text-5xl sm:text-7xl font-semibold">
           Projekte
         </h2>
+
         <p className="text-gray-500 text-center pb-10 max-w-2xl mx-auto py-2">
           Durch die eigenständige Entwicklung privater Projekte konnte ich meine
           Fähigkeiten in Frontend-Entwicklung und Design gezielt erweitern und
-          praktisch anwenden.
+          praktisch anwenden
         </p>
 
         <div className="grid gap-15 sm:grid-cols-2">
@@ -128,7 +125,7 @@ export function MainContent() {
               />
             </a>
             <div className="">
-              <h3 className="text-3xl pt-4 pb-2">Do It</h3>
+              <h3 className="text-3xl font-semibold pt-4 pb-2">Do It</h3>
               <div className="text-gray-500 text-xs flex flex-wrap gap-2">
                 <span className="rounded-full outline px-2 py-1">React</span>
                 <span className="rounded-full outline px-2 py-1">JSX</span>
@@ -150,7 +147,7 @@ export function MainContent() {
               />
             </a>
             <div className="">
-              <h3 className="text-3xl pt-4 pb-2">Rate Spiel</h3>
+              <h3 className="text-3xl font-semibold pt-4 pb-2">Rate Spiel</h3>
               <div className="text-gray-500 text-xs flex flex-wrap gap-2">
                 <span className="rounded-full outline px-2 py-1">HTML</span>
                 <span className="rounded-full outline px-2 py-1">CSS</span>
@@ -172,7 +169,9 @@ export function MainContent() {
               />
             </a>
             <div className="">
-              <h3 className="text-3xl pt-4 pb-2">Mitarbeiterverzeichnis</h3>
+              <h3 className="text-3xl font-semibold pt-4 pb-2">
+                Mitarbeiterverzeichnis
+              </h3>
               <div className="text-gray-500 text-xs flex flex-wrap gap-2">
                 <span className="rounded-full outline px-2 py-1">HTML</span>
                 <span className="rounded-full outline px-2 py-1">CSS</span>
@@ -195,7 +194,7 @@ export function MainContent() {
               />
             </a>
             <div className="">
-              <h3 className="text-3xl pt-4 pb-2">Dashboard</h3>
+              <h3 className="text-3xl font-semibold pt-4 pb-2">Dashboard</h3>
               <div className="text-gray-500 text-xs flex flex-wrap gap-2">
                 <span className="rounded-full outline px-2 py-1">HTML</span>
                 <span className="rounded-full outline px-2 py-1">CSS</span>
