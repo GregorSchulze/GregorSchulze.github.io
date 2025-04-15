@@ -68,21 +68,21 @@ export function MainContent() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:gap-5 sm:justify-between ">
+          <div className="flex flex-col sm:flex-row gap-10 sm:gap-5 sm:justify-between ">
             <div className="sm:flex-1">
               <VscFlame size={50} color="currentColor" />
               <h2 className="text-3xl font-semibold">Motivation</h2>
               <p className="text-gray-500">
-                Ich liebe es, mich weiterzuentwickeln. <br></br> Denn der ich
-                finde der Schlüssel zum Erfolg liegt in Hingabe und Kontinuität.
+                Ich liebe es, mich weiterzuentwickeln. Denn der ich finde der
+                Schlüssel zum Erfolg liegt in Hingabe und Kontinuität.
               </p>
             </div>
             <div className="sm:flex-1">
               <FaCode size={50} color="currentColor" />
               <h2 className="text-3xl font-semibold">WebDev</h2>
               <p className="text-gray-500">
-                Ich baue moderne Web-Apps mit React - clean, performant und
-                nutzerfreundlich.
+                Ich baue moderne Web-Apps mit <br></br> React - clean,
+                performant und nutzerfreundlich.
               </p>
             </div>
 
