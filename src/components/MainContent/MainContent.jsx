@@ -68,13 +68,13 @@ export function MainContent() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-10 sm:gap-5 sm:justify-between ">
+          <div className="flex flex-col sm:flex-row gap-10 sm:gap-7 sm:justify-between ">
             <div className="sm:flex-1">
               <VscFlame size={50} color="currentColor" />
               <h2 className="text-3xl font-semibold">Motivation</h2>
               <p className="text-gray-500">
-                Ich liebe es, mich weiterzuentwickeln. Denn der ich finde der
-                Schlüssel zum Erfolg liegt in Hingabe und Kontinuität.
+                Ich lebe für Weiterentwicklung und gestalte mit intrinsischer
+                Motivation kreative Frontend-Lösungen.
               </p>
             </div>
             <div className="sm:flex-1">
@@ -105,9 +105,7 @@ export function MainContent() {
         </h2>
 
         <p className="text-gray-500 text-center pb-10 max-w-2xl mx-auto py-2">
-          Durch die eigenständige Entwicklung privater Projekte konnte ich meine
-          Fähigkeiten in Frontend-Entwicklung und Design gezielt erweitern und
-          praktisch anwenden
+          Liebe zur Entwicklung ausgereifter Anwendungen
         </p>
 
         <div className="grid gap-15 sm:grid-cols-2">
