@@ -228,7 +228,7 @@ export function MainContent() {
       </section>
       {/* <!-- Testimonials --> */}
       <div className="flex justify-center">
-        <div className="text-center text-black dark:text-white my-20 text-2xl max-w-xl mx-auto ">
+        <div className="text-center text-black dark:text-white my-20 text-lg md:text-2xl max-w-xl mx-auto ">
           <p>
             „Aufgrund seiner ausgezeichneten Auffassungsgabe ist er jederzeit in
             der Lage, auch schwierige Situationen sofort zutreffend zu erfassen

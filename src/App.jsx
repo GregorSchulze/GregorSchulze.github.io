@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className="bg-white dark:bg-[#212124]">
-        <div className="max-w-[1400px] mx-auto px-10">
+        <div className="max-w-[1400px] mx-auto px-7">
           <Nav />
           <MainContent />
           <Footer />
