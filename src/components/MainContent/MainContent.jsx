@@ -25,19 +25,42 @@ export function MainContent() {
     <main className="bg-white dark:bg-[#212124] dark:text-white">
       <div className="lg:flex mb-20 justify-between">
         <div className="flex flex-col items-center lg:items-start lg:justify-center lg:text-left my-10 ">
-          <h1 className="text-4xl md:text-7xl font-semibold text-black mb-2 text-center lg:text-left dark:text-white">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="0"
+            className="text-4xl md:text-7xl font-semibold text-black mb-2 text-center lg:text-left dark:text-white"
+          >
             Hey, ich bin Gregor
           </h1>
 
-          <p className="text-2xl md:text-5xl font-semibold text-gray-500 mb-5 text-center lg:text-left">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            className="text-2xl md:text-5xl font-semibold text-gray-500 mb-2 text-center lg:text-left"
+          >
             Frontend Entwickler
           </p>
-          <a
-            href="mailto:gr.schulze@t-online.de"
-            className="rounded-full outline px-6 py-3 md:px-8 md:py-4 text-xl md:text-2xl text-white dark:text-black bg-black dark:bg-white hover:scale-110"
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            className="hidden sm:hidden md:block md:text-xl font-light text-gray-500 mb-5 text-center lg:text-left"
           >
-            Kontakt
-          </a>
+            Übersetze Motion Design in interaktive Erlebnisse
+          </p>
+          <div className="hover:scale-110 mt-3">
+            <a
+              data-aos="fade-in"
+              data-aos-duration="2000"
+              data-aos-delay="2000"
+              href="mailto:gr.schulze@t-online.de"
+              className="rounded-full outline px-6 py-3 md:px-8 md:py-4 text-xl md:text-2xl text-white dark:text-black bg-black dark:bg-white "
+            >
+              Kontakt
+            </a>
+          </div>
         </div>
         <div className="flex place-content-center mb-15">
           <img
@@ -227,16 +250,28 @@ export function MainContent() {
       {/* <!-- Testimonials --> */}
       <div className="flex justify-center">
         <div className="text-center text-black dark:text-white my-20 text-lg md:text-2xl max-w-xl mx-auto ">
-          <p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             „Aufgrund seiner ausgezeichneten Auffassungsgabe ist er jederzeit in
             der Lage, auch schwierige Situationen sofort zutreffend zu erfassen
             und schnell exzellente Lösungen zu finden. Auch in Situationen mit
             größtem Arbeitsaufkommen erweist er sich dauerhaft als
             außergewöhnlich belastbar.“
           </p>
-          <h5 className="text-xl font-bold">Katrin Brandt</h5>
-          <p className="text-xs text-gray-500">
-            SVP Weber Shandwick, ehemalige Chefin
+          <h5
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+            className="text-xl font-bold"
+          >
+            Katrin Brandt
+          </h5>
+          <p
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+            className="text-xs text-gray-500"
+          >
+            SVP Weber Shandwick, aktuelle Chefin
           </p>
         </div>
       </div>
