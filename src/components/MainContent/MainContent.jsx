@@ -27,7 +27,6 @@ export function MainContent() {
         <div className="flex flex-col items-center lg:items-start lg:justify-center lg:text-left my-10 ">
           <h1
             data-aos="fade-up"
-            data-aos-duration="1000"
             data-aos-delay="0"
             className="text-4xl md:text-7xl font-semibold text-black mb-2 text-center lg:text-left dark:text-white"
           >
@@ -36,7 +35,6 @@ export function MainContent() {
 
           <p
             data-aos="fade-up"
-            data-aos-duration="1000"
             data-aos-delay="100"
             className="text-2xl md:text-5xl font-semibold text-gray-500 mb-2 text-center lg:text-left"
           >
@@ -44,7 +42,6 @@ export function MainContent() {
           </p>
           <p
             data-aos="fade-up"
-            data-aos-duration="1000"
             data-aos-delay="200"
             className="hidden sm:hidden md:block md:text-xl font-light text-gray-500 mb-5 text-center lg:text-left"
           >
@@ -53,7 +50,6 @@ export function MainContent() {
           <div className="hover:scale-110 mt-3">
             <a
               data-aos="fade-in"
-              data-aos-duration="2000"
               data-aos-delay="2000"
               href="mailto:gr.schulze@t-online.de"
               className="rounded-full outline px-6 py-3 md:px-8 md:py-4 text-xl md:text-2xl text-white dark:text-black bg-black dark:bg-white "
@@ -62,7 +58,11 @@ export function MainContent() {
             </a>
           </div>
         </div>
-        <div className="flex place-content-center mb-15">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="400"
+          className="flex place-content-center mb-15"
+        >
           <img
             src="/img/profilev3.jpg"
             className="rounded-xl w-70 md:w-110 fade-in-slow"
@@ -80,7 +80,12 @@ export function MainContent() {
         </button>
       </div>
       {/* <!-- Über Mich --> */}
-      <section id="about" className="mb-20 ">
+      <section
+        data-aos="fade-up"
+        data-aos-delay="400"
+        id="about"
+        className="mb-20 "
+      >
         <div className="bg-[#f0f0e8] rounded-xl p-8 md:p-16 dark:bg-[#1a1a1a] text-black dark:text-white">
           <div className="mb-5">
             <h2 className="text-center text-5xl sm:text-7xl font-semibold">
@@ -122,7 +127,12 @@ export function MainContent() {
         </div>
       </section>
       {/* <!-- Projekte --> */}
-      <section id="work" className="mb-20 text-black pb-1 dark:text-white">
+      <section
+        data-aos="fade-up"
+        data-aos-delay="400"
+        id="work"
+        className="mb-20 text-black pb-1 dark:text-white"
+      >
         <h2 className="text-center text-5xl sm:text-7xl font-semibold">
           Projekte
         </h2>
@@ -133,8 +143,29 @@ export function MainContent() {
 
         <div className="grid gap-15 sm:grid-cols-2">
           {/* <!-- Projekt 1 --> */}
-
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+            <a
+              href="https://gregorschulze.github.io/cinetracker/"
+              target="_blank"
+            >
+              <img
+                className="shadow-lg rounded-xl ease-in-out hover:scale-90"
+                src="/img/cinetracker.jpg"
+                alt="cinetracker"
+              />
+            </a>
+            <div className="">
+              <h3 className="text-3xl font-semibold pt-4 pb-2">Cinetracker</h3>
+              <div className="text-gray-500 text-xs flex flex-wrap gap-2">
+                <span className="rounded-full outline px-2 py-1">React</span>
+                <span className="rounded-full outline px-2 py-1">Vite</span>
+                <span className="rounded-full outline px-2 py-1">Tailwind</span>
+                <span className="rounded-full outline px-2 py-1">API</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <a
               href="https://GregorSchulze.github.io/todo-list/"
               target="_blank"
@@ -156,7 +187,7 @@ export function MainContent() {
             </div>
           </div>
 
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
             <a
               href="https://gregorschulze.github.io/guess-the-phrase-game/"
               target="_blank"
@@ -178,7 +209,7 @@ export function MainContent() {
               </div>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
             <a
               href="https://gregorschulze.github.io/directory-of-employees-using-API/"
               target="_blank"
@@ -193,29 +224,6 @@ export function MainContent() {
               <h3 className="text-3xl font-semibold pt-4 pb-2">
                 Mitarbeiterverzeichnis
               </h3>
-              <div className="text-gray-500 text-xs flex flex-wrap gap-2">
-                <span className="rounded-full outline px-2 py-1">HTML</span>
-                <span className="rounded-full outline px-2 py-1">CSS</span>
-                <span className="rounded-full outline px-2 py-1">
-                  JavaScript
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-            <a
-              href="https://gregorschulze.github.io/interactive-dashboard/"
-              target="_blank"
-            >
-              <img
-                className="shadow-lg rounded-xl ease-in-out hover:scale-90"
-                src="/img/dashboard.jpg"
-                alt="dashboard"
-              />
-            </a>
-            <div className="">
-              <h3 className="text-3xl font-semibold pt-4 pb-2">Dashboard</h3>
               <div className="text-gray-500 text-xs flex flex-wrap gap-2">
                 <span className="rounded-full outline px-2 py-1">HTML</span>
                 <span className="rounded-full outline px-2 py-1">CSS</span>
