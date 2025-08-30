@@ -6,10 +6,10 @@ export function Nav() {
           Portfolio.
         </a>
         <div className="flex gap-x-4 md:gap-x-8 ml-auto items-center">
-          <a href="#about" className="text-sm/6 ">
+          <a href="#about" className="text-sm/6 " aria-label="About Section">
             About
           </a>
-          <a href="#work" className="text-sm/6 ">
+          <a href="#work" className="text-sm/6" aria-label="Work Section">
             Work
           </a>
 

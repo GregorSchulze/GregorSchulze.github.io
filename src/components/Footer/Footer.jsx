@@ -9,17 +9,26 @@ export function Footer() {
             <a
               href="https://www.linkedin.com/in/gregor-s-8b36401a4/"
               target="_blank"
+              aria-label="Linkedin"
             >
               <FaLinkedin size={25} color="currentColor" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/GregorSchulze" target="_blank">
+            <a
+              href="https://github.com/GregorSchulze"
+              target="_blank"
+              aria-label="Github"
+            >
               <FaGithub size={25} color="currentColor" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/gregor.schulze/" target="_blank">
+            <a
+              href="https://www.instagram.com/gregor.schulze/"
+              target="_blank"
+              aria-label="Instagram"
+            >
               <FaInstagram size={25} color="currentColor" />
             </a>
           </li>
