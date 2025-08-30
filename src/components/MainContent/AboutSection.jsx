@@ -23,7 +23,7 @@ export function AboutSection() {
         <div className="flex flex-col sm:flex-row gap-10 sm:gap-7 sm:justify-between">
           <div className="sm:flex-1">
             <FiTrendingUp size={50} color="currentColor" />
-            <h2 className="text-3xl font-semibold">Motivation</h2>
+            <h2 className="text-3xl font-semibold mb-3">Motivation</h2>
             <p className="text-gray-600  dark:text-gray-400">
               Ich lebe für Weiterentwicklung und gestalte mit intrinsischer
               Motivation kreative Frontend-Lösungen.
@@ -31,7 +31,7 @@ export function AboutSection() {
           </div>
           <div className="sm:flex-1">
             <FiCode size={50} color="currentColor" />
-            <h2 className="text-3xl font-semibold">WebDev</h2>
+            <h2 className="text-3xl font-semibold mb-3">WebDev</h2>
             <p className="text-gray-600  dark:text-gray-400">
               Ich baue moderne Web-Apps mit React - clean, performant und
               nutzerfreundlich.
@@ -39,7 +39,7 @@ export function AboutSection() {
           </div>
           <div className="sm:flex-1">
             <FiMap size={50} color="currentColor" />
-            <h2 className="text-3xl font-semibold">Bergliebhaber</h2>
+            <h2 className="text-3xl font-semibold mb-3">Bergliebhaber</h2>
             <p className="text-gray-600  dark:text-gray-400">
               Meine Freizeit verbringe ich am liebsten in den Bergen. Wenn ich
               also nicht gerade an Frontends sitze, findet ihr mich auf dem

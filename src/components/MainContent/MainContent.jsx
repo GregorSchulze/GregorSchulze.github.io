@@ -27,10 +27,11 @@ export function MainContent() {
 
   return (
     <main className="bg-white dark:bg-[#212124] dark:text-white">
-      <div className="group z-1 fixed bottom-10 right-[max(calc(50%-1000px+40px),2.5rem)]">
+      <div className="fixed z-50 bottom-6 right-6 md:bottom-8 md:right-8">
         <button
           onClick={toggleDarkMode}
-          className="rounded-full w-10 h-10 md:w-12 md:h-12 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center hover:scale-110"
+          className="rounded-full w-10 h-10 md:w-14 md:h-14 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+          aria-label="Dark Mode toggle"
         >
           {darkMode ? "☀️" : "🌙"}
         </button>

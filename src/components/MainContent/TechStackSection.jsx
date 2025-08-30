@@ -27,7 +27,7 @@ export function TechStackSection() {
       <h2 className="text-center text-5xl sm:text-7xl font-semibold">
         Meine Skill's
       </h2>
-      <p className="text-gray-600 dark:text-gray-400 text-center pb-10 max-w-2xl mx-auto py-2">
+      <p className="text-gray-600 dark:text-gray-400 text-center pb-10 max-w-2xl mx-auto">
         Für digitale Erlebnisse
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-10">
@@ -38,7 +38,7 @@ export function TechStackSection() {
           data-aos-delay="200"
           className="shadow-xl bg-[#f0f0e8] dark:bg-[#1a1a1a] rounded-xl p-8 md:p-16"
         >
-          <h2 className="text-3xl font-semibold">
+          <h2 className="text-3xl font-semibold mb-3">
             Technologien mit denen ich arbeite
           </h2>
           <p className="text-lg flex-grow">
@@ -217,7 +217,9 @@ export function TechStackSection() {
           data-aos-delay="200"
           className="shadow-xl bg-[#f0f0e8] dark:bg-[#1a1a1a] rounded-xl p-8 md:p-16 order-1 lg:order-2"
         >
-          <h2 className="text-3xl font-semibold">Software die ich verwende</h2>
+          <h2 className="text-3xl font-semibold mb-3">
+            Software die ich verwende
+          </h2>
           <p className="text-lg flex-grow">
             Neben der Webentwicklung arbeite ich auch mit professionellen
             Kreativ-Tools für Design, Motion Graphics und Video-Editing. Diese

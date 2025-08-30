@@ -16,7 +16,7 @@ export function Testimonial() {
           data-aos="fade-in"
           data-aos-duration="1000"
           data-aos-delay="1000"
-          className="text-xl font-bold"
+          className="text-xl font-bold pt-2"
         >
           Katrin Brandt
         </h5>
