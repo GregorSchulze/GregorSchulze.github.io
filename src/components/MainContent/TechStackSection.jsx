@@ -30,7 +30,6 @@ export function TechStackSection() {
       <p className="text-gray-600 dark:text-gray-400 text-center pb-10 max-w-2xl mx-auto py-2">
         Für digitale Erlebnisse
       </p>
-
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-10">
         {/* Textbereich - ****************************************/}
         <div
@@ -158,10 +157,10 @@ export function TechStackSection() {
           </div>
         </div>
       </div>
-
       {/* Software Section ****************************************/}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        {/* Icons Grid - Auf mobilen Geräten ZUERST (order-2) */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 order-2 lg:order-1">
           {/* Premiere Pro */}
           <div
             data-aos="zoom-in"
@@ -211,12 +210,12 @@ export function TechStackSection() {
           </div>
         </div>
 
-        {/* Text - ****************************************/}
+        {/* Textbereich - Auf mobilen Geräten ZULETZT (order-1) */}
         <div
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="200"
-          className="shadow-xl bg-[#f0f0e8] dark:bg-[#1a1a1a] rounded-xl p-8 md:p-16"
+          className="shadow-xl bg-[#f0f0e8] dark:bg-[#1a1a1a] rounded-xl p-8 md:p-16 order-1 lg:order-2"
         >
           <h2 className="text-3xl font-semibold">Software die ich verwende</h2>
           <p className="text-lg flex-grow">
