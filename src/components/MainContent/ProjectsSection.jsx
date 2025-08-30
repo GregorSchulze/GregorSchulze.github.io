@@ -22,6 +22,8 @@ export function ProjectsSection() {
           <a
             href="https://gregorschulze.github.io/cinetracker/"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cinetracker Projekt besuchen"
           >
             <img
               className="shadow-lg rounded-xl ease-in-out hover:scale-90"
@@ -41,7 +43,12 @@ export function ProjectsSection() {
         </div>
 
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-          <a href="https://GregorSchulze.github.io/todo-list/" target="_blank">
+          <a
+            href="https://GregorSchulze.github.io/todo-list/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Do It - Notizen App"
+          >
             <img
               className="shadow-lg rounded-xl ease-in-out hover:scale-90"
               src="/img/doit.jpg"
@@ -63,6 +70,8 @@ export function ProjectsSection() {
           <a
             href="https://gregorschulze.github.io/guess-the-phrase-game/"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ratespiel - Errate das Sprichwort"
           >
             <img
               className="shadow-lg rounded-xl ease-in-out hover:scale-90"
@@ -83,6 +92,8 @@ export function ProjectsSection() {
           <a
             href="https://gregorschulze.github.io/directory-of-employees-using-API/"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Mitarbeiterverzeichnis"
           >
             <img
               className="shadow-lg rounded-xl ease-in-out hover:scale-90"
