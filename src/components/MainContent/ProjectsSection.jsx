@@ -33,6 +33,10 @@ export function ProjectsSection() {
           </a>
           <div className="">
             <h3 className="text-3xl font-semibold pt-4 pb-2">Cinetracker</h3>
+            <p className="text-gray-600 dark:text-gray-400 text-sm pb-3">
+              Film-App mit Suche, Trailer-Ansicht und Favoritenliste auf Basis
+              der TMDB-API.
+            </p>
             <div className="text-gray-600  dark:text-gray-400 text-xs flex flex-wrap gap-2">
               <span className="rounded-full outline px-2 py-1">React</span>
               <span className="rounded-full outline px-2 py-1">Vite</span>
