@@ -26,15 +26,16 @@ export function AboutSection() {
             <h2 className="text-3xl font-semibold mb-3">Motivation</h2>
             <p className="text-gray-600  dark:text-gray-400">
               Ich lebe für Weiterentwicklung und gestalte mit intrinsischer
-              Motivation kreative Frontend-Lösungen.
+              Motivation kreative digitale Lösungen.
             </p>
           </div>
           <div className="sm:flex-1">
             <FiCode size={50} color="currentColor" />
-            <h2 className="text-3xl font-semibold mb-3">WebDev</h2>
+            <h2 className="text-3xl font-semibold mb-3">Vibecoding</h2>
             <p className="text-gray-600  dark:text-gray-400">
-              Ich baue moderne Web-Apps mit React - clean, performant und
-              nutzerfreundlich.
+              Ich habe ein gutes Grundverständnis für Programmierung und setze
+              meine Ideen am liebsten per Vibecoding um, also KI-gestützt. So
+              entstehen Web-Apps mit React und TypeScript.
             </p>
           </div>
           <div className="sm:flex-1">
@@ -42,7 +43,7 @@ export function AboutSection() {
             <h2 className="text-3xl font-semibold mb-3">Bergliebhaber</h2>
             <p className="text-gray-600  dark:text-gray-400">
               Meine Freizeit verbringe ich am liebsten in den Bergen. Wenn ich
-              also nicht gerade an Frontends sitze, findet ihr mich auf dem
+              also nicht gerade an neuen Ideen tüftle, findet ihr mich auf dem
               nächsten Gipfel.
             </p>
           </div>

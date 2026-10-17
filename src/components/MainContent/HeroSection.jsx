@@ -17,7 +17,7 @@ export function HeroSection() {
           data-aos-delay="100"
           className="text-2xl md:text-5xl font-semibold text-gray-700 mb-2 text-center lg:text-left dark:text-gray-300"
         >
-          Frontend Entwickler
+          Motion Designer &amp; Vibecoder
         </p>
 
         <p
@@ -25,7 +25,7 @@ export function HeroSection() {
           data-aos-delay="200"
           className="hidden sm:hidden md:block md:text-xl font-light text-gray-600 mb-5 text-center lg:text-left dark:text-gray-400"
         >
-          Übersetze Motion Design in interaktive Erlebnisse
+          Übersetze Motion Design in interaktive Erlebnisse, KI-gestützt
         </p>
 
         <div className="hover:scale-110 mt-3">
