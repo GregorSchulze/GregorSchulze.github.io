@@ -25,7 +25,7 @@ export function TechStackSection() {
       className="mb-40 text-black pb-1 dark:text-white"
     >
       <h2 className="text-center text-5xl sm:text-7xl font-semibold">
-        Meine Skill's
+        Meine Skills
       </h2>
       <p className="text-gray-600 dark:text-gray-400 text-center pb-10 max-w-2xl mx-auto">
         Für digitale Erlebnisse
@@ -42,12 +42,10 @@ export function TechStackSection() {
             Technologien mit denen ich arbeite
           </h2>
           <p className="text-lg flex-grow">
-            Ich arbeite mit modernsten Softwarelösungen, um außergewöhnliche
-            digitale Produkte zu entwickeln. Mein Tech-Stack umfasst
-            fortschrittliche Technologien und branchenführende Werkzeuge, mit
-            denen ich kreative Konzepte in performante Lösungen umsetze. Hier
-            sind einige der Programme und Frameworks, die ich für professionelle
-            Ergebnisse einsetze:
+            Mein Fundament sind Web-Grundlagen wie HTML, CSS und JavaScript
+            sowie React. Darauf baue ich beim Vibecoding auf: Ich habe ein gutes
+            Grundverständnis für Programmierung und lasse mich gezielt von KI
+            unterstützen. Das sind die Technologien, mit denen ich arbeite:
           </p>
         </div>
 
