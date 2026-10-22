@@ -1,21 +1,28 @@
-import { useState } from "react";
-import "./index.css";
-import { Nav } from "./components/Nav/Nav";
-import { MainContent } from "./components/MainContent/MainContent";
-import { Footer } from "./components/Footer/Footer";
-import "aos/dist/aos.css";
+import { Nav } from "./components/Nav";
+import { Hero } from "./components/Hero";
+import { About } from "./components/About";
+import { Projects } from "./components/Projects";
+import { Cv } from "./components/Cv";
+import { Quote } from "./components/Quote";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <>
-      <div className="bg-white dark:bg-[#212124]">
-        <div className="max-w-[1400px] mx-auto px-7">
-          <Nav />
-          <MainContent />
-          <Footer />
-        </div>
+    <div id="top" className="min-h-screen bg-bg text-fg">
+      <div className="mx-auto max-w-[1000px] px-6 md:px-10">
+        <Nav />
+        <main>
+          <Hero />
+          <About />
+          <Projects />
+          <Cv />
+          <Quote />
+          <Contact />
+        </main>
+        <Footer />
       </div>
-    </>
+    </div>
   );
 }
 

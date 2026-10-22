@@ -1,9 +1,83 @@
-@import "tailwindcss/preflight";
-@tailwind utilities;
 @import "tailwindcss";
 
-* {
-  @apply transition-all duration-300 scroll-smooth;
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Farb-Tokens: Hell ist Standard, .dark überschreibt */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1b1a17;
+  --muted: #6e685c;
+  --line: #d9d3c5;
+  --accent: #b4451f;
+  --placeholder: #f6f5f3;
+  color-scheme: light;
 }
 
-@custom-variant dark (&:where(.dark, .dark *));
+:root.dark {
+  --bg: #141311;
+  --fg: #f1ede4;
+  --muted: #a39c8d;
+  --line: #2f2c26;
+  --accent: #eb8153;
+  --placeholder: #1d1b17;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.ul-link {
+  color: var(--fg);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.ul-link:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}
