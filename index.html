@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Motion Designer und Vibecoder mit gutem Programmierverständnis. Web-Apps mit React und TypeScript, KI-gestützt entwickelt, als Arbeitsproben."
+      content="Gregor Schulze, Content Engineer aus Berlin. Erklärvideos, Launch-Inhalte und Claude-Skills, die Software verständlich machen."
     />
     <meta
       name="keywords"
-      content="Vibecoding, Vibecoder, Motion Design, Frontend, Entwickler, React, JavaScript, TypeScript, Webentwicklung, Portfolio, Gregor Schulze, Frontend Developer, Leipzig, Berlin, München, Dresden, Sachsen, Plagwitz"
+      content="Content Engineer, Product Education, Educational Content, Erklärvideos, Claude, Motion Design, Gregor Schulze, Berlin"
     />
     <meta name="author" content="Gregor Schulze" />
+    <script>
+      // Theme vor dem ersten Rendern setzen, damit nichts aufblitzt
+      try {
+        var saved = localStorage.getItem("darkMode");
+        var dark =
+          saved === "true" ||
+          (saved !== "false" &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+        if (dark) document.documentElement.classList.add("dark");
+      } catch (e) {}
+    </script>
 
     <link rel="icon" type="image/jpeg" href="/img/profilev3.jpeg" />
-    <link rel="stylesheet" href="/src/index.css" />
-    <title>Gregor Schulze</title>
+    <title>Gregor Schulze, Content Engineer</title>
   </head>
 
   <body id="home">
