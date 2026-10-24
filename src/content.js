@@ -2,87 +2,90 @@ export const links = {
   mail: "mailto:gr.schulze@t-online.de",
   linkedin: "https://www.linkedin.com/in/gregor-s-8b36401a4/",
   github: "https://github.com/GregorSchulze",
-  instagram: "https://www.instagram.com/gregor.schulze/",
 };
 
 export const hero = {
-  title: ["Content", "Engineer"],
-  text: "Ich mache Software verständlich: mit Erklärvideos, Launch-Inhalten und Systemen, die Qualität wiederholbar machen. Mir geht es dabei weniger um Output als darum, dass Menschen ein Produkt wirklich nutzen können.",
+  title: "Content Engineer",
+  text: "I make software easier to understand, with explainer videos, launch content and systems that make quality repeatable. What matters to me isn’t output but whether people can actually use a product.",
 };
 
 export const about = {
-  lead: "Ich messe Inhalte daran, ob Menschen danach etwas besser können.",
+  lead: "I judge content by whether people can do something better afterwards.",
   paragraphs: [
-    "Hallo, ich bin Gregor. Ich arbeite an der Schnittstelle von Produkt, Erklärung und Community: Wie versteht jemand eine Software, wo bleibt er hängen, und welcher Inhalt hilft in genau diesem Moment?",
-    "Bei Hero Software verantworte ich die Videoinhalte der Educational-Seite für Kunden und produziere Launch-Videos für neue Features. Gezielte Videos in der Community sollen die Nutzung der Software leichter machen.",
-    "Zuvor habe ich fünf Jahre als Motion Designer in einer PR-Agentur gearbeitet. Dieses Handwerk übersetze ich heute in Systeme: Mit Claude baue ich eigene Skills, die Qualität und Konsistenz sichern, damit meine Zeit in die wichtigen Fragen geht. Was muss jemand verstehen, und woran merke ich, dass es geholfen hat?",
-    "Meine Freizeit verbringe ich am liebsten in den Bergen. Wenn ich nicht gerade an neuen Ideen tüftle, findet ihr mich auf dem nächsten Gipfel.",
+    "Hi, I’m Gregor. I work where product, explanation and community meet. How does someone come to understand a piece of software, where do they get stuck, and what content helps at exactly that moment?",
+    "At Hero Software, I’m responsible for the video content on the customer education site and produce launch videos for new features. Targeted videos in the community are meant to make the software easier to use.",
+    "Before that, I spent five years as a motion designer at a PR agency. Today I turn that craft into systems. I build my own skills in Claude that keep quality and consistency in check, so my time goes into the questions that matter. What does someone need to understand, and how do I know it helped?",
+    "I spend my free time in the mountains whenever I can. When I’m not tinkering with new ideas, you’ll find me on the next summit.",
   ],
   tools: [
-    ["KI und Content", "Claude, eigene Claude-Skills, Educational Content, Vibecoding"],
-    ["Web (privat gelernt)", "HTML, CSS, JavaScript, TypeScript, React, Tailwind, Git"],
-    ["Motion und Video", "After Effects, Premiere Pro, Photoshop"],
+    ["AI and content", "Claude, custom Claude Skills, educational content, vibe coding"],
+    ["Web", "HTML, CSS, JavaScript, TypeScript, React, Tailwind, Git"],
+    ["Motion and video", "After Effects, Premiere Pro, Figma"],
   ],
 };
 
 export const projects = {
-  intro:
-    "Hobbyprojekte, mit denen ich Programmierung und Vibecoding ausprobiere, privat und neben dem Beruf.",
+  intro: "Projects I use to learn programming and vibe coding.",
   items: [
     {
       title: "Rentenplaner",
       href: "https://gregorschulze.github.io/rentenplaner/",
       image: "/img/rentenplaner.jpg",
-      imageAlt:
-        "Rentenplaner: Eingabemaske und Diagramm der BTC- und ETF-Entwicklung",
+      imageAlt: "Rentenplaner: input form and chart of BTC and ETF growth",
       crop: true,
-      text: "BTC- und ETF-Sparplanrechner als installierbare Web-App (PWA). Entstanden per Vibecoding, also KI-gestützt entwickelt.",
+      text: "A BTC and ETF savings plan calculator as an installable web app (PWA). Built through vibe coding.",
       tags: "React, TypeScript, Vite",
     },
     {
       title: "Cinetracker",
       href: "https://gregorschulze.github.io/cinetracker/",
       image: "/img/cinetracker.jpeg",
-      imageAlt: "Cinetracker: Raster mit Filmplakaten und Suchfeld",
+      imageAlt: "Cinetracker: grid of film posters with a search field",
       crop: false,
-      text: "Film-App mit Suche, Trailer-Ansicht und Favoritenliste auf Basis der TMDB-API.",
+      text: "A film app with search, trailer view and a favorites list, built on the TMDB API.",
       tags: "React, Vite, Tailwind",
     },
   ],
 };
 
 export const cv = {
-  intro: "Vom Motion Design zum Content Engineering.",
+  intro: "From motion design to content engineering.",
   items: [
     {
-      date: "Okt. 2026 bis heute",
-      title: "Produktmarketingmanager, Hero Software",
-      text: "Customer Education, Aufbau der Academy, Content-Produktion und Unterstützung bei Feature-Launches. Ich entwickle eigene Claude-Skills, die Educational Content in Serie erzeugen.",
+      date: "Oct 2026 – present",
+      title: "Product Marketing Manager, Hero Software",
+      text: "I’m responsible for our customer learning academy and support feature launches with video.",
+      bullets: [
+        "Build systems and processes, including my own Claude Skills, for fast and consistent video content",
+        "Support other teams with video production",
+      ],
     },
     {
-      date: "Sep. 2021 bis 2026",
+      date: "Sep 2021 – 2026",
       title: "Motion Designer, Weber Shandwick, Berlin",
-      text: "Motion Design und Videoproduktion in einer PR-Agentur, mit der Adobe Creative Cloud. Vom Trainee Motion Design (2021) über Junior Motion Designer (2022) zum Motion Designer (2025).",
+      text: "At the PR agency Weber Shandwick, I worked mainly in healthcare, turning complex health topics into clear, accessible video formats. I contributed to projects that moved health communication forward.",
+      bullets: [
+        "Built AI systems for voiceover and video production (Higgsfield, Gemini Gems) to use time and resources more efficiently",
+        "Advised project teams on technical consistency, version control and creative decisions for final deliverables",
+        "Owned technical specs and quality control for complex digital formats, and connected concept and client teams in production",
+      ],
+    },
+    { date: "2024", title: "Front-end development course, Treehouse" },
+    {
+      date: "Alongside",
+      title: "Freelance video production",
+      text: "Corporate films, music videos for various artists, wedding films and commercials for a range of clients.",
     },
     {
-      date: "2024",
-      title: "Weiterbildung Frontend, Treehouse",
-    },
-    {
-      date: "Parallel",
-      title: "Videoproduktion, freiberuflich",
-      text: "Musikvideos für verschiedene Artists, Hochzeitsvideos und Werbefilme für diverse Auftraggeber.",
-    },
-    {
-      date: "2017 bis 2021",
-      title: "Bachelor of Arts, Medienmanagement, Hochschule Mittweida",
-      text: "Vertiefung Production.",
+      date: "2017 – 2021",
+      title: "Bachelor of Arts in Media Management, Mittweida University of Applied Sciences",
+      text: "Specialization in production.",
     },
   ],
 };
 
 export const quote = {
-  text: "„Aufgrund seiner ausgezeichneten Auffassungsgabe ist er jederzeit in der Lage, auch schwierige Situationen sofort zutreffend zu erfassen und schnell exzellente Lösungen zu finden. Auch in Situationen mit größtem Arbeitsaufkommen erweist er sich dauerhaft als außergewöhnlich belastbar.“",
+  text: "“Thanks to his excellent quick grasp, he is always able to assess even difficult situations accurately and immediately and to find excellent solutions fast. Even under the heaviest workloads, he consistently proves exceptionally resilient.”",
   name: "Katrin Brandt",
-  role: "SVP Weber Shandwick, frühere Vorgesetzte",
+  role: "SVP at Weber Shandwick",
 };

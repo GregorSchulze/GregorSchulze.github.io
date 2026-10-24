@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
-/* Farb-Tokens: Hell ist Standard, .dark überschreibt */
+/* Farben folgen der Systemeinstellung (hell/dunkel) */
 :root {
-  --bg: #f4f1ea;
-  --fg: #1b1a17;
-  --muted: #6e685c;
-  --line: #d9d3c5;
-  --accent: #b4451f;
-  --placeholder: #f6f5f3;
+  --bg: #eceae3;
+  --fg: #222222;
+  --muted: #5f5e5a;
+  --line: #d3d1ca;
+  --accent: #3a5a8a;
+  --onaccent: #ffffff;
   color-scheme: light;
 }
 
-:root.dark {
-  --bg: #141311;
-  --fg: #f1ede4;
-  --muted: #a39c8d;
-  --line: #2f2c26;
-  --accent: #eb8153;
-  --placeholder: #1d1b17;
-  color-scheme: dark;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #222222;
+    --fg: #eceae3;
+    --muted: #a3a19b;
+    --line: #3a3a38;
+    --accent: #9ab4e0;
+    --onaccent: #222222;
+    color-scheme: dark;
+  }
 }
 
 @theme inline {
@@ -29,14 +29,14 @@
   --color-muted: var(--muted);
   --color-line: var(--line);
   --color-accent: var(--accent);
-  --font-sans: "Geist Variable", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-mono: "Geist Mono Variable", ui-monospace, SFMono-Regular, monospace;
-  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --color-onaccent: var(--onaccent);
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+  --font-display: "Instrument Serif", Georgia, serif;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
 }
 
 body {
@@ -52,8 +52,7 @@ body {
   color: var(--bg);
 }
 
-a:focus-visible,
-button:focus-visible {
+a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 4px;
   border-radius: 4px;
@@ -67,10 +66,21 @@ button:focus-visible {
   text-decoration-thickness: 1px;
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
-
 .ul-link:hover {
   color: var(--accent);
   text-decoration-color: var(--accent);
+}
+
+#contact .ul-link {
+  color: var(--onaccent);
+  text-decoration-color: var(--onaccent);
+}
+#contact .ul-link:hover {
+  color: var(--onaccent);
+}
+#contact ::selection {
+  background: var(--onaccent);
+  color: var(--accent);
 }
 
 @media (prefers-reduced-motion: reduce) {

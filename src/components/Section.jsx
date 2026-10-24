@@ -1,15 +1,15 @@
-export function Section({ id, label, intro, children }) {
+export function Section({ id, label, intro, children, className = "" }) {
   return (
     <section
       id={id}
-      className="grid gap-x-10 gap-y-4 border-t border-line pt-10 pb-16 md:grid-cols-[200px_minmax(0,1fr)] md:pt-14 md:pb-20"
+      className={`border-t border-line pt-9 pb-14 md:grid md:grid-cols-[200px_minmax(0,1fr)] md:gap-10 md:pt-14 md:pb-20 ${className}`}
     >
-      <h2 className="pt-2 font-mono text-xs font-normal uppercase tracking-[0.04em] text-muted md:text-[13px]">
+      <h2 className="m-0 font-mono text-xs font-normal uppercase tracking-[0.04em] text-muted md:pt-2 md:text-[13px]">
         {label}
       </h2>
       <div>
         {intro && (
-          <p className="font-display text-[30px] leading-[1.18] tracking-[-0.01em] text-balance md:text-[40px] md:leading-[1.15]">
+          <p className="mt-5 font-display text-[26px] leading-[1.2] tracking-[-0.01em] text-balance md:mt-0 md:text-[40px] md:leading-[1.15]">
             {intro}
           </p>
         )}
