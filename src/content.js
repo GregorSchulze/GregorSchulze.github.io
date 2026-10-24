@@ -1,5 +1,5 @@
 export const links = {
-  mail: "mailto:gr.schulze@t-online.de",
+  mail: "mailto:sayhello.gregor@pm.me",
   linkedin: "https://www.linkedin.com/in/gregor-s-8b36401a4/",
   github: "https://github.com/GregorSchulze",
 };
