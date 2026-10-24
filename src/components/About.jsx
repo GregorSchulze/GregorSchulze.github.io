@@ -1,29 +1,32 @@
 import { about } from "../content";
 import { Section } from "./Section";
 
-const photo = "/img/profilev3.jpeg";
+const photo = "/img/gregor-schulze.jpg";
+
+// Foto als Hintergrund statt <img>: kein „Bild speichern unter“, kein Ziehen,
+// kein Rechtsklick-Menü. Ein Screenshot bleibt immer möglich.
+function Photo({ className, decorative }) {
+  return (
+    <div
+      role={decorative ? undefined : "img"}
+      aria-label={decorative ? undefined : "Gregor Schulze"}
+      aria-hidden={decorative ? "true" : undefined}
+      onContextMenu={(e) => e.preventDefault()}
+      onDragStart={(e) => e.preventDefault()}
+      className={`aspect-[4/5] bg-cover bg-top bg-no-repeat select-none [-webkit-touch-callout:none] ${className}`}
+      style={{ backgroundImage: `url(${photo})` }}
+    />
+  );
+}
 
 export function About() {
   return (
     <Section id="about" label="About">
-      <img
-        src={photo}
-        alt="Gregor Schulze"
-        width="128"
-        height="160"
-        className="mt-6 block aspect-[4/5] w-32 rounded-[14px] object-cover object-top md:hidden"
-      />
+      <Photo className="mt-6 block w-32 rounded-[14px] md:hidden" />
       <p className="mt-6 font-display text-[26px] leading-[1.2] tracking-[-0.01em] text-balance md:mt-0 md:text-[40px] md:leading-[1.15]">
         {about.lead}
       </p>
-      <img
-        src={photo}
-        alt=""
-        aria-hidden="true"
-        width="200"
-        height="250"
-        className="float-right mt-7 mb-6 ml-12 hidden aspect-[4/5] w-[200px] rounded-2xl object-cover object-top md:block"
-      />
+      <Photo className="float-right mt-7 mb-6 ml-12 hidden w-[200px] rounded-2xl md:block" />
       {about.paragraphs.map((t, i) => (
         <p
           key={i}

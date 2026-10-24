@@ -1,5 +1,8 @@
+// E-Mail steht nicht im Klartext im Code, damit Adress-Sammler sie nicht finden.
+// Sie wird erst beim Klick zusammengesetzt.
+export const mailParts = [[115,97,121,104,101,108,108,111,46,103,114,101,103,111,114],[112,109,46,109,101]];
+
 export const links = {
-  mail: "mailto:sayhello.gregor@pm.me",
   linkedin: "https://www.linkedin.com/in/gregor-s-8b36401a4/",
   github: "https://github.com/GregorSchulze",
 };

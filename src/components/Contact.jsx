@@ -1,4 +1,10 @@
-import { links } from "../content";
+import { links, mailParts } from "../content";
+
+function openMail(e) {
+  e.preventDefault();
+  const [user, domain] = mailParts.map((p) => String.fromCharCode(...p));
+  window.location.href = "mai" + "lto:" + user + "@" + domain;
+}
 
 export function Contact() {
   return (
@@ -8,7 +14,7 @@ export function Contact() {
     >
       <h2 className="m-0 font-display text-[52px] leading-none font-normal tracking-[-0.02em] md:text-[88px]">Let’s talk.</h2>
       <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-[17px] md:mt-10 md:gap-x-8 md:text-lg">
-        <a className="ul-link" href={links.mail}>Email me</a>
+        <a className="ul-link" href="#contact" onClick={openMail}>Email me</a>
         <a className="ul-link" href={links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a className="ul-link" href={links.github} target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
