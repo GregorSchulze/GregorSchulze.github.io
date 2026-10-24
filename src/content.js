@@ -68,7 +68,6 @@ export const cv = {
       title: "Motion Designer, Weber Shandwick, Berlin",
       text: "At the PR agency Weber Shandwick, I worked mainly in healthcare, turning complex health topics into clear, accessible video formats. I contributed to projects that moved health communication forward.",
       bullets: [
-        "Built AI systems for voiceover and video production (Higgsfield, Gemini Gems) to use time and resources more efficiently",
         "Advised project teams on technical consistency, version control and creative decisions for final deliverables",
         "Owned technical specs and quality control for complex digital formats, and connected concept and client teams in production",
       ],
